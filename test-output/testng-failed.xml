@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.RecipeScrapingHackathon.utilities.Reporting"/>
+  </listeners>
+  <test thread-count="5" name="Test1(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.RecipeScrapingHackathon.testCases.TC_001ScrapingPage">
+        <methods>
+          <include name="tearDown"/>
+          <include name="ScrapingPageTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.RecipeScrapingHackathon.testCases.TC_001ScrapingPage -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test thread-count="5" name="Test2(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.RecipeScrapingHackathon.testCases.TC_001ScrapingPage">
+        <methods>
+          <include name="tearDown"/>
+          <include name="ScrapingPageTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.RecipeScrapingHackathon.testCases.TC_001ScrapingPage -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->
